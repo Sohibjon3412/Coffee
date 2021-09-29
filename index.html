@@ -5,11 +5,83 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&family=Fraunces:wght@900&display=swap" rel="stylesheet">
+  <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
   <link rel="stylesheet" href="https://col-css.netlify.app/css/column.css">
   <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  
+  <section>
+    <div class="hero">
+      <div class="container">
+        <header class="header">
+          <a href="#">
+            <img class="header__img" src="media/img/site-logo.svg" alt="site-logo">
+          </a>
+          <nav>
+            <ul class="nav-list">
+              <li class="nav-list__item">
+                <a class="nav-list__link" href="#">Home</a>
+            </li>
+              <li class="nav-list__item">
+                <a class="nav-list__link" href="#">About Us</a>
+            </li>
+              <li class="nav-list__item">
+                <a class="nav-list__link" href="#">Create your plan</a>
+              </li>
+              </ul>
+            </nav>
+            <div class="menu">
+              <label class="menu__label" for="menu"><i class='bx bx-menu'></i></label>
+              <input class="menu__inp" type="checkbox" name="menu" id="menu">
+            </div>
+        </header>
+        <div class="main main--bg">
+          <div class="inner-container">
+            <h2 class="main__title">Great coffee made simple</h2>
+            <p class="main__text">Start your mornings with the world’s best coffees. Try our expertly curated artisan coffees from our best roasters delivered directly to your door, at your schedule.</p>
+            <div class="btn-sec">
+              <a class="main__btn btn" href="#">Create your plan</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="inner-container">
+      <div class="collection">
+        <ul class="collection__list">
+          <li class="collection__item ">
+            <div>
+              <h2 class="collection__title">Gran Espresso</h2>
+              <p class="collection__text">Light and flavorful blend with cocoa and black pepper for an intense experience.</p>
+            </div>
+          </li>
+          <li class="collection__item ">
+            <div>
+              <h2 class="collection__title">Planalto</h2>
+              <p class="collection__text">Brazilian dark roast with rich and velvety body, and hints of fruits and nuts.</p>
+            </div>
+          </li>
+          <li class="collection__item ">
+            <div>
+              <h2 class="collection__title">Piccollo</h2>
+              <p class="collection__text">Mild and smooth blend featuring notes of toasted almond and dried cherry.</p>
+            </div>
+          </li>
+          <li class="collection__item ">
+            <div>
+              <h2 class="collection__title">Danche</h2>
+              <p class="collection__text">Ethiopian hand-harvested blend densely packed with vibrant fruit notes.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
 </body>
 </html>
