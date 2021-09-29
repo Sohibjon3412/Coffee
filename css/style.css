@@ -165,8 +165,6 @@ p {
   height: 193px;
   background-size: 255px 193px;
   display: block;
-  /* position: absolute; */
-  /* top: 123px; */
 }
 .collection__item:nth-child(1)::before {
   background-image: url("../media/img/collection1.png");
@@ -201,6 +199,91 @@ p {
   text-align: center;
   color: #333D4B;
 }
+.chooise {
+  max-width: 100%;
+  height: 577px;
+  background-color: #282F38;
+  border-radius: 7px;
+  margin-top: 200px;
+  margin-bottom: 350px;
+}
+.servis__title {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 48px;
+  padding-top: 100px;
+  text-align: center;
+  color: #FEFCF7;
+}
+.servis-text {
+  width: 540px;
+  height: 80px;
+  margin: 0 auto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  color: #FEFCF7;
+  opacity: 0.8;
+}
+.servis-list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 86px;
+}
+.servis-list__item {
+  width: 350px;
+  height: 382px;
+  text-align: center;
+  list-style: none;
+  background: #0E8784;
+  border-radius: 8px;
+}
+.servis-list__item::before {
+  content: "";
+  
+  display: block;
+  width: 72px;
+  height: 72px;
+  margin: 0 auto;
+  margin-top: 72px;
+  background-repeat: no-repeat;
+}
+.servis-list__item:nth-child(1):before {
+  background-image: url("../media/img/servis-img1.png");
+}
+.servis-list__item:nth-child(2):before {
+  background-image: url("../media/img/servis-img2.png");
+}
+.servis-list__item:nth-child(3):before {
+  background-image: url("../media/img/servis-img3.png");
+}
+.servis-list__title {
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  color: #FEFCF7;
+  margin-top: 56px;
+}
+.servis-list__text {
+  width: 255px;
+  height: 78px;
+  margin: 0 auto;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  color: #FEFCF7;
+}
+
+
+
+
+
+
 
 
 
@@ -257,6 +340,46 @@ p {
   .main--bg::before {
     background-position: left bottom;
   }
+  /* SERVIS */
+  .chooise {
+    margin-top: 540px;
+    margin-bottom: 440px;
+  }
+  .servis-list {
+    flex-direction: column;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 70px;
+  }
+  .servis-list__item {
+    width: 700px;
+    height: 180px;
+    margin: 0 auto;
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .servis-list__text {
+    margin-bottom: 16px;
+  }
+  .servis-list__title {
+    text-align: left;
+  }
+  .servis-list__text {
+    width: 480px;
+    height: 50px;
+    text-align: left;
+  }
+  .servis-list__item div {
+    width: 480px;
+    height: 98px;
+  }
+  .servis-list__item::before {
+    width: 56px;
+    height: 56px;
+    background-size: 56px;
+    margin-left: 90px;
+  }
 }
 @media screen and (max-width: 992px){
   .main--bg::before {
@@ -280,6 +403,59 @@ p {
   }
   .collection__list {
     height: 1321px;
+  }
+  /* SERVIS  */
+  .chooise {
+    width: 350px;
+    height: 902px;
+    margin: 0 auto;
+    margin-top: 1300px;
+    margin-bottom: 720px;
+  }
+  .servis__title  {
+    font-size: 28px;
+    line-height: 28px;
+  }
+  .servis-text {
+    width: 280px;
+    height: 125px;
+  }
+  .servis-list {
+    margin: 0 auto;
+    padding: 0;
+    margin-top: 64px;
+  }
+  .servis-list__item {
+    width: 279px;
+    height: 382px;
+    margin: 0 auto;
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+  .servis-list__item::before {
+    width: 72px;
+    height: 72px;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+  .servis-list__item div {
+    width: 255px;
+    height: 200px;
+  }
+  .servis-list__title {
+    font-size: 24px;
+    line-height: 32px;
+    margin: 0 auto;
+    margin-bottom: 24px;
+    text-align: center;
+  }
+  .servis-list__text {
+    width: 212px;
+    height: 75px;
+    text-align: center;
   }
 }
 @media screen and (max-width: 768px) {
