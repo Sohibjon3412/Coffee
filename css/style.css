@@ -486,6 +486,17 @@ p {
   nav {
     display: none;
   }
+  /* SERVIS  */
+  .servis-list__item {
+    width: 229px;
+    height: 382px;
+    margin: 0 auto;
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+  }
 }
 @media screen and (max-width:576px) {
   .main__title {
